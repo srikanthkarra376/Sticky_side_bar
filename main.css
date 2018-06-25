@@ -1,0 +1,64 @@
+body {
+  height:100%;
+  margin:0;
+  background:lightskyblue;
+  font-family: "Montserrat";
+}
+section {
+  display: grid;
+  grid-template-columns: 30% auto;
+}
+figure {
+  background: lightblue;
+  margin:0;
+}
+article {
+  font-size: 1em;
+}
+img {
+  width:300px;
+  position: sticky;
+  position:-webkit-sticky;
+  top:20px;
+}
+p ,h2{
+  margin:20px;
+}
+h2 {
+  font-size: 3em;
+  margin-top:0;
+}
+.entered {
+ 
+  -webkit-animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: swing-top-fwd 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  
+}
+ @-webkit-keyframes swing-top-fwd {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
+@keyframes swing-top-fwd {
+  0% {
+    -webkit-transform: rotateX(0);
+            transform: rotateX(0);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+  100% {
+    -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+    -webkit-transform-origin: top;
+            transform-origin: top;
+  }
+}
